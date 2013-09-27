@@ -11,7 +11,7 @@ function dropdownEvent()
         //url : 'link',	//calling method //*no need for you
         //success : function(data)
         //{
-            $("#dropdown-id").html("");
+            	$("#dropdown-id").html("");
 		$("#dropdown-id").append('<option value="'+item+'">'+item+'</option>');
 	        //for(var i=0; i<=obj_array.length;i++)
 		//{
