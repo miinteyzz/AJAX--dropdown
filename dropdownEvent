@@ -9,22 +9,13 @@ function dropdownEvent()
 			        success : function(data)
 			        {
 			            $("#dropdown-id").html("");
-						
-						if(delegacion == "-1")
-						{
-							$("#productos").append('<option value="-1">- - Escoger Productos - -</option>');
-							$("#contratos-table-tbody").append('');
-						}
-						else
-						{
-							$("#productos").append('<option value="-1">- - Escoger Productos - -</option>');
-				            for(var i=0; i<=obj_array.length;i++)
-					        {
-								var aux = obj_array[i];
-								//alert(aux.code+","+aux.descrip);
-				            	$("#productos").append('<option value="'+aux.code+'">'+aux.descrip+'</option>');
-				            }//end for loop
-						}//end if
+									$("#productos").append('<option value="-1">- - Escoger Productos - -</option>');
+				          //for(var i=0; i<=obj_array.length;i++)
+					        //{
+											//var aux = obj_array[i];
+											//alert(aux.code+","+aux.descrip);
+				            	//$("#productos").append('<option value="'+aux.code+'">'+aux.descrip+'</option>');
+				            //}//end for loop
 			        }//end success
 			    });//end ajax request
 			};//end subDropdown()
