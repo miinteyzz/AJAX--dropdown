@@ -12,7 +12,7 @@ function dropdownEvent()
         //success : function(data)
         //{
             $("#dropdown-id").html("");
-		$("#dropdown-id").append('<option value="'+item_id+'">'+item_val+'</option>');
+		$("#dropdown-id").append('<option value="'+item+'">'+item+'</option>');
 	        //for(var i=0; i<=obj_array.length;i++)
 		//{
 			//var aux = obj_array[i];
