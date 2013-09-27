@@ -4,10 +4,10 @@ function dropdownEvent()
     //alert(delegacion);
     $.ajax(
 	{
-        data : item, //{data1:client, data2:delegacion}, (if you need many values)
+        //data : item, //{data1:client, data2:delegacion}, (if you need many values)
         //url : 'link',	//calling method //*no need for you
-        success : function(data)
-        {
+        //success : function(data)
+        //{
             $("#dropdown-id").html("");
 		$("#productos").append('<option value="-1">- - Escoger Productos - -</option>');
 	        //for(var i=0; i<=obj_array.length;i++)
@@ -16,6 +16,6 @@ function dropdownEvent()
 			//alert(aux.code+","+aux.descrip);
 	            	//$("#productos").append('<option value="'+aux.code+'">'+aux.descrip+'</option>');
 	        //}//end for loop
-        }//end success
+        //}//end success
     });//end ajax request
 };//end subDropdown()
